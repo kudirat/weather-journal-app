@@ -38,8 +38,8 @@ const getWeather = async (baseURL, zipCode, key) => {
 }
 
 // Chain promise to POST request to add the API data, as well as data entered by the user, to your app.
-const postData = async (url = "", data = {}) => {
-  //console.log(data)
+const postData = async (url = '', data = {}) => {
+  console.log(data)
   const res = await fetch(url, {
     method: 'POST',
     credentials: 'same-origin',
@@ -51,7 +51,7 @@ const postData = async (url = "", data = {}) => {
   try {
     const newData = await res.json();
     console.log(newData);
-    return newData
+    return newData;
   } catch (error) {
     console.log("error", error);
   }

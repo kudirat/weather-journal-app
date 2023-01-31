@@ -21,11 +21,9 @@ app.use(cors());
 app.use(express.static('website'));
 
 // GET method route to return project data object to server
-app.get('/all', sendData);
-
-function sendData(req, res) {
+app.get('/all', function (req, res) {
   res.send(projectData);
-}
+});
 
 // POST method route to add incoming data to projectData
 app.post('/add', addData);
@@ -44,5 +42,5 @@ function listening() {
   console.log(server);
   console.log(`running on localhost: ${port}`);
 };
-
+//go to local host: 3000 to run code. Live server won't work.
 

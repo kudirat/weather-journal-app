@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buda&display=swap');
 body{
     background: #fffff8;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.vsc-initialized {
+    background-image: url('images/background_img.jpg');
+    background-size: 1500px 990px;
+    
+}
+
 #app{
+    margin-top: 140px;
+    margin-left: 100px;
     display: grid;
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
+    height:80vh;
+    
+    color: whitesmoke;
     justify-content: center;
     grid-gap: 1em;
     font-size: 20px;
@@ -19,10 +29,46 @@ body{
 .holder{
 
 }
+.holder.feel{
+   display: flex;
+   flex-direction: column;
+ 
+}
+
+.holder.zip{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+    
+}
+
+label[for=zip]{
+    
+}
+
+label[for=feelings]{
+    
+}
+
+#feelings.myInput{
+    
+}
+
+#generate{
+ 
+}
+
+
+.myInput {
+background-color: rgba(0, 0, 0, 0.2);
+}
 
 .entry{
-    background: rgba(59, 74, 107, .4);
+    background: rgba(0, 0, 0, .4);
 }
+
+
 
 #entryHolder{
 
@@ -41,6 +87,19 @@ body{
 }
 
 .headline {
+    font-family: 'Buda', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffab6e ;
+    text-shadow: 5px 5px 0px #c35436  , 
+      10px 10px 0px #4997d0 , 
+      15px 15px 0px #90B1E0;
 
 }
 .title{
@@ -51,14 +110,15 @@ body{
 label{
     display:block;
     font-size: 27px;
+    color:#9c7c38;
 }
 
 input{
     display:block;
     height: 60px;
     width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
+    background: rgba(0, 0, 0, 0.2);    ;
+    color: whitesmoke;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
@@ -67,20 +127,22 @@ input{
 button{
     width: 400px;
     height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
+    background: #102a49;
+    color: whitesmoke;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    margin-top: 20px;
 }
 h1{
     font-size: 36px;
+    
 }
 
 textarea{
-    background:#22b2da;
-    color: #f0d43a;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
@@ -93,19 +155,17 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+    color: whitesmoke; 
     font-family: 'Oswald', sans-serif;
-
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+    color: whitesmoke; 
     font-family: 'Oswald', sans-serif;
 
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+    color: whitesmoke; 
     font-family: 'Oswald', sans-serif;
-
 } 
