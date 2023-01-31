@@ -7,13 +7,13 @@ body{
 
 .vsc-initialized {
     background-image: url('images/background_img.jpg');
-    background-size: 1500px 990px;
+    background-size: 1550px 990px;
     
 }
 
 #app{
     margin-top: 140px;
-    margin-left: 100px;
+    margin-left: 60px;
     display: grid;
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
@@ -44,16 +44,19 @@ body{
 }
 
 label[for=zip]{
-    
+    align-self: center;
 }
 
 label[for=feelings]{
-    
+    align-self: center;
 }
 
 #feelings.myInput{
     
 }
+
+
+
 
 #generate{
  
@@ -65,13 +68,17 @@ background-color: rgba(0, 0, 0, 0.2);
 }
 
 .entry{
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .2);
+    border-radius:0.5em;
+    border-color: snow;
+    border-width: 1em;
+
 }
 
 
 
 #entryHolder{
-
+    
 }
 
 #date{
@@ -92,7 +99,7 @@ background-color: rgba(0, 0, 0, 0.2);
     font-weight: 700;
     position: absolute;
     left: 50%;
-    top: 8%;
+    top: 10%;
     transform: translate(-50%,-50%);
     letter-spacing: 0.02em;
     text-align: center;
@@ -110,7 +117,7 @@ background-color: rgba(0, 0, 0, 0.2);
 label{
     display:block;
     font-size: 27px;
-    color:#9c7c38;
+    color:#d0744f;
 }
 
 input{
@@ -121,19 +128,24 @@ input{
     color: whitesmoke;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    align-self: center;
     border: none;
+    border-radius:0.5em;
 }
 
 button{
-    width: 400px;
+    width: 500px;
     height: 100px;
     background: #102a49;
     color: whitesmoke;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
-    border: none;
+    border:#ffab6e;
+    border-radius: 1em;
     box-shadow: 2px 4px 5px #444;
     margin-top: 20px;
+
+    
 }
 h1{
     font-size: 36px;
@@ -145,6 +157,7 @@ textarea{
     color: whitesmoke;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    border-radius:0.5em;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
